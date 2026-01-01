@@ -1,0 +1,110 @@
+---
+title: Introduction to Ivan Kiryanov
+description: Discover Ivan Kiryanov's documentation platform, designed to help you organize and manage project documentation efficiently.
+---
+
+## Overview
+
+Ivan Kiryanov provides a powerful documentation platform that lets you create, organize, and publish project docs with ease. You get a centralized space for all your Markdown and MDX files, complete with search, versioning, and collaboration tools. Whether you manage open-source projects or internal team knowledge bases, this platform streamlines your workflow.
+
+Build structured sites from your content using built-in themes and components. Customize layouts, add interactive elements like tabs and steps, and deploy instantly without managing servers.
+
+## Key Benefits
+
+Ivan Kiryanov stands out with features tailored for developers and teams. Explore the core advantages below.
+
+<Columns cols={3}>
+  <Card title="Fast Setup" icon="zap" href="/quickstart">
+    Launch your docs site in minutes. No complex configuration required.
+  </Card>
+  <Card title="Rich Components" icon="components" href="#components">
+    Use pre-built JSX components like `<Callout>`, `<Steps>`, and `<Tabs>` for engaging content.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="/changelog">
+    Track changes with Git integration and semantic versioning.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="#navigation">
+    Full-text search and intuitive sidebar for quick access.
+  </Card>
+</Columns>
+
+## Navigation Guide
+
+Navigate your documentation efficiently using these core elements.
+
+<Tabs>
+  <Tab title="Sidebar" icon="menu">
+    The left sidebar shows your page hierarchy. Click headings to expand sections.
+
+    Use the search bar at the top to find specific topics instantly.
+  </Tab>
+  <Tab title="Top Navigation" icon="navigation">
+    Breadcrumbs at the top track your current location. Use the hamburger menu on mobile for full access.
+  </Tab>
+  <Tab title="Quick Links" icon="link">
+    Footer cards link to popular pages like `/quickstart` and `/authentication`.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Pro tip: Bookmark frequently used pages and use keyboard shortcuts like <kbd>Ctrl</kbd>+<kbd>K</kbd> for instant search.
+</Callout>
+
+## Get Started in Minutes
+
+Jump into Ivan Kiryanov with this quick teaser. Full guides await in [Quickstart](/quickstart).
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://dashboard.example.com/register` with your email.
+  </Step>
+  <Step title="Upload Docs" icon="upload">
+    Connect your Git repo or drag-and-drop MDX files.
+  </Step>
+  <Step title="Customize" icon="settings">
+    Edit frontmatter and add components like this `<CodeGroup>`.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Deploy your site live. Share the URL with your team.
+  </Step>
+</Steps>
+
+Here's a simple code example to add a multi-language snippet to your docs:
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Fetch your docs API
+const response = await fetch('https://api.example.com/docs', {
+  headers: { Authorization: `Bearer ${YOUR_API_KEY}` }
+});
+const docs = await response.json();
+console.log(docs);
+```
+```python
+# Fetch your docs API
+import requests
+response = requests.get(
+    'https://api.example.com/docs',
+    headers={'Authorization': f'Bearer {YOUR_API_KEY}'}
+)
+docs = response.json()
+print(docs)
+```
+</CodeGroup>
+
+## Next Steps
+
+Ready to dive deeper? Check these resources:
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="book-open" href="/quickstart">
+    Set up your first project.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your docs with API keys.
+  </Card>
+</Columns>
+
+<Expandable title="Need Help?" default-open="false">
+  Visit the [Help Center](/help-center) or contact support at support@example.com.
+</Expandable>

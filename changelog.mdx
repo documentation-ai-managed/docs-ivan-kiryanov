@@ -1,0 +1,134 @@
+---
+title: Changelog
+description: Review the version history of Ivan Kiryanov, including recent updates and improvements.
+---
+
+## Overview
+
+Track all changes to Ivan Kiryanov in this changelog. You receive detailed release notes for each version, grouped by new features, improvements, bug fixes, and breaking changes. Check here regularly to stay informed about enhancements that help you organize and manage your project documentation more effectively.
+
+<Callout kind="info">
+  Subscribe to our RSS feed or follow updates on GitHub to get notified of new releases automatically.
+</Callout>
+
+## Recent Releases
+
+<Update label="2024-10-20" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added AI-powered search to quickly find documentation across your projects
+- Introduced version pinning for stable documentation workflows
+
+## Improvements
+
+- Enhanced MDX parsing speed by `>30%` for larger sites
+- Better mobile responsiveness in the documentation preview
+
+## Bug Fixes
+
+- Fixed inline `{variable}` escaping issues in prose content
+- Resolved nested code block rendering errors
+
+</Update>
+
+<Update label="2024-10-05" description="v1.2.1" tags={["bugfix", "security"]}>
+
+## Bug Fixes
+
+- Patched potential XSS vulnerability in user-uploaded images
+- Corrected table alignment problems in dark mode
+- Fixed `ParamField` component validation for required attributes
+
+## Security
+
+- Updated all dependencies to latest secure versions
+
+</Update>
+
+<Update label="2024-09-18" description="v1.2.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Full support for `<Update>` components in changelogs with tag filtering
+- Integrated `<Columns>` and `<Card>` layouts for dynamic feature grids
+
+## Breaking Changes
+
+- Removed legacy `<Mermaid>` component syntax; use code blocks only
+- Updated attribute syntax to require double quotes everywhere
+
+## Improvements
+
+- Added `default-open` prop to `<Expandable>` for better UX control
+
+</Update>
+
+## How to Upgrade
+
+Follow these steps to update your Ivan Kiryanov instance to the latest version.
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+    Create a full backup of your documentation files and database.
+
+    ```bash
+    tar -czf backup-$(date +%Y%m%d).tar.gz /path/to/ivan-kiryanov
+    ```
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    <CodeGroup tabs="npm,yarn">
+
+    ````bash
+    npm install ivan-kiryanov@latest
+    ````
+
+    ````bash
+    yarn add ivan-kiryanov@latest
+    ````
+
+    </CodeGroup>
+
+  </Step>
+  <Step title="Run Migrations" icon="settings">
+
+    Execute database migrations if applicable.
+
+    ```bash
+    npx ivan-kiryanov migrate
+    ```
+
+  </Step>
+  <Step title="Restart Service" icon="refresh-cw">
+
+    Restart your documentation server.
+
+    ```bash
+    pm2 restart ivan-kiryanov
+    ```
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Test the upgrade in a staging environment first to avoid disruptions.
+</Callout>
+
+## Next Steps
+
+Explore these resources to get the most from recent updates.
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up your first documentation site.
+  </Card>
+  <Card title="Components Guide" icon="code" href="/components">
+    Learn advanced component usage.
+  </Card>
+  <Card title="Customization" icon="palette" href="/customization">
+    Tailor Ivan Kiryanov to your brand.
+  </Card>
+</Columns>
